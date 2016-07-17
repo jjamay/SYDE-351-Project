@@ -1,12 +1,12 @@
 k1 = 10;
-m = 10;
-R = 0.1;
-b = 10;
+m = 1;
+R = 1;
+b = 100;
 k2 = 10;
-J = 1;
+J = 10;
 
 options=odeset('RelTol',1e-4,'AbsTol',1e-8);
-[t,y]=ode45(@PullBackCar,[0 1],[0;5;0;0],options,k1,m,R,b,k2,J);
+[t,y]=ode45(@PullBackCar,[0 1],[0;0;0;0],options,k1,m,R,b,k2,J);
 
 % outpu10
 %q1=y(:,1);
