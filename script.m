@@ -1,9 +1,10 @@
-k1 = 37.817; % Measured - Translational K value
-k2 = 0.03083365392; % Measured - Rotational K value
-m = 1; % independent
-R = 1; % indepenent
-b = 100; % independent
+% Real life parameters
+k1 = 37.817; % Translational K value
+k2 = 0.03083365392; % Rotational K value
+m = 0.1265; % Mass of the car
 
+R = 1; 
+b = 100; 
 J = 1;
 
 options=odeset('RelTol',1e-4,'AbsTol',1e-8);
