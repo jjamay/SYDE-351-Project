@@ -1,8 +1,9 @@
-k1 = 10; % Independent
+k1 = 37.817; % Measured - Translational K value
+k2 = 0.03083365392; % Measured - Rotational K value
 m = 1; % independent
 R = 1; % indepenent
 b = 100; % independent
-k2 = 1; % 
+
 J = 1;
 
 options=odeset('RelTol',1e-4,'AbsTol',1e-8);
