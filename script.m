@@ -11,7 +11,7 @@ inner_radius = 0.01; % Inner wheel radius in m
 J = 0.5*m_wheel*(outer_radius^2 + inner_radius^2);  
 
 % Unknown still 
-b = 100; % parameter for friction - what do we do with this?
+b = 109.6; % parameter for friction - what do we do with this?
 
 options=odeset('RelTol',1e-4,'AbsTol',1e-8);
 [t,y]=ode45(@PullBackCar,[0 1000],[0;100;0;0],options,k1,m_car,outer_radius,b,k2,J);
